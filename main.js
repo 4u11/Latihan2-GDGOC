@@ -4,7 +4,7 @@ let notes = [
         heading: "Mempelajari Javascript",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non expedita similique tempora tempore exercitationem. Accusamus sint porro iste quos velit aperiam voluptas placeat error nulla maxime id, deserunt eum.",
         created_by: "John Doe",
-        created_at: 1738146027613 // bisa menggunakan Date.now()
+        created_at: Date.now() 
     }
 ];
 
@@ -49,10 +49,10 @@ const deleteNote = (id) => {
 }
 
 // mengetes kode (diharapkan untuk tidak diganti): 
-createNote("Belajar React", "Mempelajari dasar-dasar React dan cara membuat komponen.", "Jane Doe");
+createNote("Belajar React", "Mempelajari dasar-dasar React dan cara membuat komponen.", "Jane Doe", Date.now());
 console.log(readNote());
 console.log("=================================================================================================================");
-updateNote(1, "Mempelajari JavaScript Lanjutan", "Mempelajari konsep lanjutan dalam JavaScript.");
+updateNote(1, "Mempelajari JavaScript Lanjutan", "Mempelajari konsep lanjutan dalam JavaScript.", "Keqing", Date.now());
 console.log(readNote());
 console.log("=================================================================================================================");
 deleteNote(1);
